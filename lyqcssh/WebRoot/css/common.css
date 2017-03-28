@@ -1,0 +1,28 @@
+body{
+	font-size: 13px;
+	font-family: Verdana;
+	margin:0;
+}
+
+a.anavi:link,a.anavi:visited{
+	color:#233B87;
+	text-decoration: none;
+}
+
+a.anavi:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+/*有一款按钮--分享来自韩顺平老师*/
+.button1{
+	background-color:#ffffff;
+   	cursor:pointer;
+	width:25px;
+	height:25px;
+   	background-image:url(../images/manager/addsta.png);
+   	background-repeat:no-repeat;
+   	background-position:center;
+   	text-align:center;
+   	border:none;
+ } 

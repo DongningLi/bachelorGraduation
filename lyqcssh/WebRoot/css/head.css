@@ -1,0 +1,50 @@
+.head1{
+ height: 101px;
+ width: 1200px;
+ margin: 0 auto;
+}
+.head.logo {
+	width: 697px;
+}
+
+.navi1 {
+	float: right;
+	margin-right:17px;
+}
+
+.navi1 li {
+	list-style-type:none;
+	margin-top:97px;
+	float: right;
+	height: 33px;
+	width: 70px;
+	text-align: center;
+	font-size:15px;
+	font-weight:bold;
+	
+}
+
+.nav {
+	height: 25px;
+	width: 100%;
+	background: #233B87;
+}
+
+.navlist {
+	margin:52px auto 0 auto;
+	width: 800px;
+	text-align: center;
+	line-height: 25px;
+}
+.navlist li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	color: #FFAB39;
+}
+
+.navlist li a span {
+	background: url("./images/txtb/findbg.png");
+	background-size: 100% 100%;
+	background-position: center;
+}

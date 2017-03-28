@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="userForm" type="com.ldn.web.forms.UserForm" />
+		<form-bean name="staffForm" type="com.ldn.web.forms.StaffForm" />
+		<form-bean name="adsForm" type="com.ldn.web.forms.AdsForm" />
+	</form-beans>
+	<action-mappings>
+		<action path="/login" parameter="flag" name="userForm"
+			type="com.ldn.web.action.LoginAction">
+			<forward name="manager" path="/WEB-INF/MmainFrame.jsp" />
+			<forward name="err" path="/WEB-INF/login.jsp" />
+			<forward name="staff" path="/WEB-INF/SmainFrame.jsp" />
+			<forward name="logout" path="/WEB-INF/login.jsp" />
+		</action>
+		<action attribute="staffForm" input="/WEB-INF/manager/register.jsp"
+			name="staffForm" parameter="flag" path="/register" scope="request"
+			type="com.ldn.web.action.RegisterAction">
+			<forward name="regok" path="/WEB-INF/manager/register_ok.jsp" />
+		</action>
+		<action input="/WEB-INF/SmainFrame.jsp" parameter="flag" path="/smain"
+			type="com.ldn.web.action.SmainAction">
+			<forward name="smainok" path="/WEB-INF/staff/smain.jsp" />
+
+		</action>
+		<action parameter="flag" path="/nvchoose"
+			type="com.ldn.web.action.NvchooseAction">
+			<forward name="staads" path="/WEB-INF/staff/ads.jsp" />
+			<forward name="staintro" path="/WEB-INF/staff/intro.jsp" />
+		</action>
+		<action input="/WEB-INF/MmainFrame.jsp" parameter="flag" path="/mmain"
+			type="com.ldn.web.action.MmainAction">
+			<forward name="mmainok" path="/WEB-INF/manager/mmain.jsp" />
+		</action>
+
+		<action name="adsForm" input="/WEB-INF/manager/pblsads.jsp"
+			parameter="flag" path="/pblsads" type="com.ldn.web.action.PblsadsAction">
+			<forward name="pblsadsok" path="/WEB-INF/manager/pblsads_ok.jsp" />
+		</action>
+		<action parameter="flag" path="/mngnvch"
+			type="com.ldn.web.action.MngnvchAction">
+			<forward name="mnginfo" path="/WEB-INF/manager/register.jsp" />
+			<forward name="mngads" path="/WEB-INF/manager/ads.jsp" />
+			<forward name="mngnewads" path="/WEB-INF/manager/pblsads.jsp" />
+      <forward name="mngintro" path="/WEB-INF/manager/intro.jsp" />
+		</action>
+    <action
+      name="staffForm" 
+      input="/WEB-INF/staff/intro.jsp"
+      parameter="flag"
+      path="/edit"
+      type="com.ldn.web.action.EditAction" >
+      <forward name="editok" path="/WEB-INF/staff/intro_ok.jsp" />
+    </action>
+    <action
+      input="/WEB-INF/staff/ads.jsp"
+      parameter="flag"
+      path="/adbyadname"
+      type="com.ldn.web.action.AdbyadnameAction" >
+      <forward name="adbyadnameok" path="/WEB-INF/staff/adbyadsname.jsp" />
+    </action>
+    <action
+      input="/WEB-INF/manager/ads.jsp"
+      parameter="flag"
+      path="/mngadsdeal"
+      type="com.ldn.web.action.MngadsdealAction">
+      <forward name="delok" path="/WEB-INF/manager/delads_ok.jsp" />
+      <forward name="delerr" path="/WEB-INF/manager/delads_err.jsp" />
+      <forward name="delstaerr" path="/WEB-INF/manager/delsta_err.jsp" />
+      <forward name="delstaok" path="/WEB-INF/manager/delsta_ok.jsp" />
+      <forward name="adbynameok" path="/WEB-INF/manager/adbyadsname.jsp" />
+    </action>
+    <action
+      input="/WEB-INF/manager/intro.jsp"
+      parameter="flag"
+      path="/stabyname"
+      type="com.ldn.web.action.StabynameAction" >
+      <forward name="stabynameok" path="/WEB-INF/manager/staffnamecon.jsp" />
+      
+      
+      
+    </action>
+    <action
+      input="/WEB-INF/manager/head.jsp"
+      parameter="flag"
+      path="/headnavi"
+      type="com.ldn.web.action.HeadnaviAction" >
+      <forward name="headnavimmain" path="/WEB-INF/MmainFrame.jsp" />
+      <forward name="staheadnavismainok" path="/WEB-INF/SmainFrame.jsp" />
+      
+    </action>
+
+
+
+	</action-mappings>
+
+
+	<!-- 配置代理请求处理 DelegatingRequestProcessor -->
+	<controller>
+		<set-property property="processorClass"
+			value="org.springframework.web.struts.DelegatingRequestProcessor" />
+	</controller>
+	<message-resources parameter="com.lyqcssh.struts.ApplicationResources" />
+
+</struts-config>

@@ -1,0 +1,37 @@
+.all {
+    height: 557px;
+    width: 980px;
+    margin: 0 auto;
+    color:white;
+} 
+.reg_table1 {
+    width: 975px;
+    margin-left: 5px;
+    float: left;
+} 
+.reg_table1 table {
+    width: 950px;
+    line-height: 23px;
+} 
+.tb_td1 {
+    width: 130px;
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 10px;
+} 
+.tb_td2 {
+    width: 555px;
+}
+#ocp_yewu {
+    display: none;
+} 
+#ocp_anjian{
+    display: none;
+} 
+#ocp_kaifa{
+    display: none;
+} 
+#ocp_zonghe{
+    display: none;
+}

@@ -1,0 +1,79 @@
+.all {
+	height: 517px;
+	width: 1200px;
+	margin: 5px auto 0 auto;
+}
+
+.navileft {
+	height: 517px;
+	width: 220px;
+	float: left;
+}
+
+.card-holder {
+	position: relative;
+	width: 0px;
+	overflow: visible;
+}
+
+.mainright {
+	height: 517px;
+	width: 979px;
+	float: right;
+}
+
+.mainright iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.card-wrapper {
+	display: inline-block;
+	float: right;
+	clear: both;
+}
+
+.card {
+	position: relative;
+	left: 207px;
+	padding: 16px 32px 16px 64px;
+	margin: 8px;
+	x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+	background: #fff;
+	transition: all 0.3s ease-in-out 0.1s;
+}
+
+.card:hover {
+	position: relative;
+	left: 100%;
+	margin-left: 21px;
+	box-shadow: 0 -8px 8px -8px rgba(0, 0, 0, 0.5), 0 8px 8px -8px
+		rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.card-content {
+	display: inline-block;
+	color: #fff;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.bg-01 {
+	background: #EDD6B4;
+}
+
+.bg-02 {
+	background: #4B7D74;
+}
+
+.bg-03 {
+	background: #233B87;
+}
+
+.bg-04 {
+	background: #FF9000;
+}

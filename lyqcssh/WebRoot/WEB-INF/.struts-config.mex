@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/login.do" location="135,-15" dimension="224,104" />
+  <StrutsActivity path="/register.do" location="15,450" dimension="151,100" />
+  <StrutsActivity path="/smain.do" location="-180,135" dimension="196,100" />
+  <StrutsActivity path="/nvchoose.do" location="60,270" dimension="150,100" />
+  <StrutsActivity path="/mmain.do" location="345,120" dimension="165,100" />
+  <StrutsActivity path="/pblsads.do" location="570,525" dimension="150,100" />
+  <StrutsActivity path="/mngnvch.do" location="630,270" dimension="150,100" />
+  <StrutsActivity path="/edit.do" location="810,225" dimension="151,76" />
+  <StrutsActivity path="/adbyadname.do" location="410,656" dimension="150,100" />
+  <StrutsActivity path="/mngadsdeal.do" location="833,98" dimension="150,100" />
+  <StrutsActivity path="/stabyname.do" location="1110,360" dimension="150,100" />
+  <StrutsActivity path="/headnavi.do" location="15,-225" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/SmainFrame.jsp" location="-75,-15" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/login.jsp" location="90,135" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/MmainFrame.jsp" location="465,-255" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/register_ok.jsp" location="195,450" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/register.jsp" location="-180,450" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/staff/smain.jsp" location="-135,270" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/staff/ads.jsp" location="88,605" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/staff/intro.jsp" location="240,240" dimension="150,76" />
+  <StrutsActivity path="/WEB-INF/manager/mmain.jsp" location="570,105" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/pblsads_ok.jsp" location="750,525" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/pblsads.jsp" location="390,525" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/ads.jsp" location="420,285" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/intro.jsp" location="885,390" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/staff/intro_ok.jsp" location="1110,240" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/staff/adbyadsname.jsp" location="750,645" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/delads_ok.jsp" location="1080,75" dimension="230,53" />
+  <StrutsActivity path="/WEB-INF/manager/delads_err.jsp" location="1095,150" dimension="232,53" />
+  <StrutsActivity path="/WEB-INF/manager/delsta_ok.jsp" location="1110,-45" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/adbyadsname.jsp" location="585,0" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/delsta_err.jsp" location="810,-60" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/staffnamecon.jsp" location="1095,525" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/manager/head.jsp" location="-210,-210" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/staff/head.jsp" location="300,-120" dimension="150,100" />
+  <StrutsTransition id="/mngnvch.do,mngintro,/WEB-INF/manager/intro.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="780,320" />
+      <AbsolutePoint location="946,320" />
+      <AbsolutePoint location="946,390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/register.jsp,null,/register.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-30,500" />
+      <AbsolutePoint location="15,500" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/pblsads.do,pblsadsok,/WEB-INF/manager/pblsads_ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="720,575" />
+      <AbsolutePoint location="750,575" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/edit.do,editok,/WEB-INF/staff/intro_ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="961,263" />
+      <AbsolutePoint location="1110,263" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/nvchoose.do,staads,/WEB-INF/staff/ads.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="210,331" />
+      <AbsolutePoint location="360,331" />
+      <AbsolutePoint location="360,625" />
+      <AbsolutePoint location="238,625" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/headnavi.do,headnavimmain,/WEB-INF/MmainFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,-205" />
+      <AbsolutePoint location="465,-205" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngnvch.do,mngnewads,/WEB-INF/manager/pblsads.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="705,370" />
+      <AbsolutePoint location="705,450" />
+      <AbsolutePoint location="861,450" />
+      <AbsolutePoint location="861,377" />
+      <AbsolutePoint location="1050,377" />
+      <AbsolutePoint location="1050,1003" />
+      <AbsolutePoint location="395,1003" />
+      <AbsolutePoint location="395,625" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/head.jsp,null,/headnavi.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-60,-175" />
+      <AbsolutePoint location="15,-175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngadsdeal.do,adbynameok,/WEB-INF/manager/adbyadsname.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="908,98" />
+      <AbsolutePoint location="908,70" />
+      <AbsolutePoint location="735,70" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/SmainFrame.jsp,null,/smain.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,85" />
+      <AbsolutePoint location="0,135" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/nvchoose.do,staintro,/WEB-INF/staff/intro.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="210,285" />
+      <AbsolutePoint location="240,285" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngnvch.do,mnginfo,/WEB-INF/manager/register.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="675,370" />
+      <AbsolutePoint location="675,407" />
+      <AbsolutePoint location="-105,407" />
+      <AbsolutePoint location="-105,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/pblsads.jsp,null,/pblsads.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,575" />
+      <AbsolutePoint location="570,575" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngadsdeal.do,delerr,/WEB-INF/manager/delads_err.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="983,176" />
+      <AbsolutePoint location="1095,176" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,logout,/WEB-INF/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,89" />
+      <AbsolutePoint location="165,135" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,staff,/WEB-INF/SmainFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,70" />
+      <AbsolutePoint location="75,70" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngadsdeal.do,delok,/WEB-INF/manager/delads_ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="983,113" />
+      <AbsolutePoint location="1080,113" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngadsdeal.do,delstaok,/WEB-INF/manager/delsta_ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="979,98" />
+      <AbsolutePoint location="979,5" />
+      <AbsolutePoint location="1110,5" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/headnavi.do,staheadnavismainok,/WEB-INF/SmainFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="30,-125" />
+      <AbsolutePoint location="30,-15" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/MmainFrame.jsp,null,/mmain.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="495,-155" />
+      <AbsolutePoint location="495,120" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/smain.do,smainok,/WEB-INF/staff/smain.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-90,235" />
+      <AbsolutePoint location="-90,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mmain.do,mmainok,/WEB-INF/manager/mmain.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="510,155" />
+      <AbsolutePoint location="570,155" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,manager,/WEB-INF/MmainFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="359,37" />
+      <AbsolutePoint location="540,37" />
+      <AbsolutePoint location="540,-155" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/stabyname.do,stabynameok,/WEB-INF/manager/staffnamecon.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1170,460" />
+      <AbsolutePoint location="1170,525" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/staff/intro.jsp,null,/edit.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="390,255" />
+      <AbsolutePoint location="810,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,err,/WEB-INF/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="225,89" />
+      <AbsolutePoint location="225,135" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adbyadname.do,adbyadnameok,/WEB-INF/staff/adbyadsname.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="560,695" />
+      <AbsolutePoint location="750,695" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,regok,/WEB-INF/manager/register_ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="166,500" />
+      <AbsolutePoint location="195,500" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/ads.jsp,null,/mngadsdeal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="495,385" />
+      <AbsolutePoint location="495,505" />
+      <AbsolutePoint location="1402,505" />
+      <AbsolutePoint location="1402,-300" />
+      <AbsolutePoint location="801,-300" />
+      <AbsolutePoint location="801,118" />
+      <AbsolutePoint location="833,118" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngadsdeal.do,delstaerr,/WEB-INF/manager/delsta_err.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="945,98" />
+      <AbsolutePoint location="945,40" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/intro.jsp,null,/stabyname.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1035,410" />
+      <AbsolutePoint location="1110,410" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/staff/ads.jsp,null,/adbyadname.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="238,690" />
+      <AbsolutePoint location="410,690" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mngnvch.do,mngads,/WEB-INF/manager/ads.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="630,335" />
+      <AbsolutePoint location="570,335" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/head.jsp,null,/login.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-135,-110" />
+      <AbsolutePoint location="-135,-65" />
+      <AbsolutePoint location="247,-65" />
+      <AbsolutePoint location="247,-15" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/mmain.jsp,null,/mngnvch.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="705,205" />
+      <AbsolutePoint location="705,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/staff/ads.jsp,null,/WEB-INF/staff/adbyadsname.jsp,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="163,705" />
+      <AbsolutePoint location="163,801" />
+      <AbsolutePoint location="825,801" />
+      <AbsolutePoint location="825,745" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/intro.jsp,null,/mngadsdeal.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="976,390" />
+      <AbsolutePoint location="976,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/staff/head.jsp,null,/login.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="344,-20" />
+      <AbsolutePoint location="344,-15" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/staff/smain.jsp,null,/nvchoose.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-60,270" />
+      <AbsolutePoint location="-60,255" />
+      <AbsolutePoint location="135,255" />
+      <AbsolutePoint location="135,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/delsta_ok.jsp,null,/mngnvch.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1185,-45" />
+      <AbsolutePoint location="1185,-375" />
+      <AbsolutePoint location="750,-375" />
+      <AbsolutePoint location="750,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/ads.jsp,null,/mngadsdeal.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="570,377" />
+      <AbsolutePoint location="801,377" />
+      <AbsolutePoint location="801,178" />
+      <AbsolutePoint location="833,178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/manager/intro.jsp,null,/WEB-INF/manager/staffnamecon.jsp,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="960,490" />
+      <AbsolutePoint location="960,575" />
+      <AbsolutePoint location="1095,575" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

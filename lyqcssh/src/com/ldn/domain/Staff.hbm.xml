@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.ldn.domain.Staff" table="staff" catalog="coproject">
+	<cache usage="read-write"/>
+		<id name="staid" type="java.lang.String">
+			<column name="staid" length="10" />
+			<generator class="assigned" />
+		</id>
+		<property name="staname" type="java.lang.String">
+			<column name="staname" length="10" not-null="true" />
+		</property>
+		<property name="stadep" type="java.lang.String">
+			<column name="stadep" length="10" />
+		</property>
+		<property name="staocp" type="java.lang.String">
+			<column name="staocp" length="10" />
+		</property>
+		<property name="stasex" type="java.lang.String">
+			<column name="stasex" length="10" />
+		</property>
+		<property name="stapass" type="java.lang.String">
+			<column name="stapass" length="20" not-null="true" />
+		</property>
+		<property name="staidt" type="java.lang.String">
+			<column name="staidt" />
+		</property>
+		<property name="stabirth" type="java.lang.String">
+			<column name="stabirth" length="10" />
+		</property>
+		<property name="staphone" type="java.lang.String">
+			<column name="staphone" length="11"  />
+		</property>
+		<property name="staemail" type="java.lang.String">
+			<column name="staemail"  />
+		</property>
+		<property name="stacrt" type="java.lang.String">
+			<column name="stacrt" length="10" not-null="true" />
+		</property>
+		<property name="stahon" type="java.lang.String">
+			<column name="stahon" length="256" />
+		</property>
+	</class>
+</hibernate-mapping>
